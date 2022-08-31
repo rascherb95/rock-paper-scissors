@@ -23,9 +23,12 @@ function getComputerChoice() {
 }
 
 playButton.addEventListener('click', () => {
-    document.getElementById('displaySelections').innerHTML = "You chose " + playerChoice + " and the Computer chose " + getComputerChoice();
-    result = playerChoice + computerChoice;
-    console.log(result);
+    if (playerChoice === undefined) {
+        document.getElementById('displaySelections').innerHTML = "Please make a selection";
+    } else {
+        document.getElementById('displaySelections').innerHTML = "You chose " + playerChoice + " and the Computer chose " + getComputerChoice();
+        result = playerChoice + computerChoice;
+    }
 
     switch (result) {
         case "rockscissors":
