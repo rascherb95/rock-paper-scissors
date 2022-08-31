@@ -1,2 +1,2 @@
 # rock-paper-scissors
-tOP Rock Paper Scissors
+basic rock paper scissors in JS
